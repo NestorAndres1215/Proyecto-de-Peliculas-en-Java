@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>CinemaTrailer</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -14,58 +14,54 @@
 		form .invalid-feedback {
 			display: block;
 		}
+
+		.navbar {
+			background-color: #0b3d91 !important;
+		}
+
+		.navbar-brand, .navbar-nav .nav-link {
+			color: #FFD700 !important;
+			font-weight: bold;
+			transition: color 0.3s ease;
+		}
+
+		.navbar-nav .nav-link:hover {
+			color: #ffcc00 !important;
+		}
 	</style>
 </head>
 
 <body>
 
-	
-
-
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<!-- Brand -->
-		<a class="navbar-brand" href="#">
-			<center>CINEMA MAX</center>
-		</a>
-
-		<!-- Toggler/collapsibe Button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+<nav class="navbar navbar-expand-md navbar-dark">
+	<div class="container">
+		<a class="navbar-brand" href="#">CINEMA MAX</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<!-- Navbar links -->
 		<div class="collapse navbar-collapse" id="menu">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav ms-auto">
 				<li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="/peliculas">Peliculas</a></li>
+				<li class="nav-item"><a class="nav-link" href="/peliculas">Películas</a></li>
 				<li class="nav-item"><a class="nav-link" href="/admin">Administración</a></li>
-
 			</ul>
 		</div>
-	</nav>
-
-
-
-
-
-
-
-
-	<div layout:fragment="content" class="container my-5">
 	</div>
+</nav>
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<div layout:fragment="content" class="container my-5">
+</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-	<div layout:fragment="scripts" th:remove="tag">
-
-	</div>
+<div layout:fragment="scripts" th:remove="tag">
+</div>
 </body>
 
 </html>
